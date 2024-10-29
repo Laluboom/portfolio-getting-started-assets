@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function Home() {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [ messageInput, setMessageInput ] = useState('');
+  const [messageInput, setMessageInput] = useState('');
 
   const [messages, setMessages] = useState([
-		{
-			role: 'assistant',
-			content: 'How can I help you learn more about Adrian and his Resume?'
-		}
+    {
+      role: 'assistant',
+      content: 'How can I help you learn more about Adrian and his Resume?'
+    }
   ]);
 
   const submitForm = async (e) => {
@@ -60,7 +60,7 @@ export default function Home() {
           </ul>
           <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
             <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
             </svg>
           </a>
         </nav>
@@ -203,7 +203,7 @@ export default function Home() {
               <div>2013-2018</div>
               <p>A small to large business organisation that helps facilitate advice and support.</p>
             </article>
-            
+
           </div>
         </section>
         <section id="projects" className="bento container">
